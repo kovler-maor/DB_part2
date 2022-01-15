@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>base</title>
+
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+<div id="doc" class="yui-t1">
+    <div id="bd">
+
+        <div id="ft">
+            <div id="header">
+                {% block header_content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+
+    <div id="yui-main">
+        <br>
+        <div class="yui-b">
+            <div class="content">
+                {% block main_content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+
+    <div class="yui-b">
+        <br>
+        <div class="content2">
+            <br>
+
+            <div class="link_wrapper">
+                <a href="home"> <br>HOME </a>
+                <div class="icon">
+                    <div class="p3"> <img style="height: 50px" width="40px" src="{% static "arrow.png" %}"></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="link_wrapper">
+                <a href="add"> <br>ADD </a>
+                <div class="icon">
+                    <div class="p3"> <img style="height: 50px" width="40px" src="{% static "arrow.png" %}"></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="link_wrapper">
+                <a href="buy"> <br>BUY </a>
+                <div class="icon">
+                    <div class="p3"> <img style="height: 50px" width="40px" src="{% static "arrow.png" %}"></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="link_wrapper">
+                <a href="query"> <br>QUERY </a>
+                <div class="icon">
+                    <img style="height: 50px" width="40px" src="{% static "arrow.png" %}">
+                </div>
+            </div>
+
+            <br>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
